@@ -1,0 +1,158 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					}
+				],
+				"name": "createStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_studentId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getStudent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "studentId",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Student.Student",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "idToStudent",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "studentId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "studentId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/4_Student.sol": "Student"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/4_Student.sol": {
+			"keccak256": "0x60a9581fce519fb449ee9700fd76bdfde89dcb1d248d358426f763f1de404a2e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9867af29b5b30eebeabf3508654470bf71f99d8f028b9caf4c4ce6867f3e65c3",
+				"dweb:/ipfs/QmXLNRwJx48XbQ2265AnkkhL3yGNUdPU3DgJRQSpFjnWcY"
+			]
+		}
+	},
+	"version": 1
+}

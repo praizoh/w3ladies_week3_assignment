@@ -1,0 +1,129 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					}
+				],
+				"name": "createStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_studentId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getStudent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "studentId",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Student_.Student",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "idToStudent",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "studentId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/4_Student.sol": "Student_"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/4_Student.sol": {
+			"keccak256": "0x3518bf54c9e2f8b58179d5e4c7dfede292df64ff24ae993100ed63d04a5ac59f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f36801a05c35d7d2b76972432c8e5f39dbefd4c578e965b8c5bc66a1c1cd81cf",
+				"dweb:/ipfs/QmXGr7p4ThWVCcy3WtZznfJdv4ppsB8jazFrLrfvHPZqMB"
+			]
+		}
+	},
+	"version": 1
+}
